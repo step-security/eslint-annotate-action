@@ -1,0 +1,3 @@
+[[IgnoredVulns]]
+id = "GHSA-h67p-54hq-rp68"
+reason = "js-yaml: Quadratic-complexity DoS in merge key handling via repeated aliases; transitive dev dependency via @istanbuljs/load-nyc-config. Not exploitable in this context."
