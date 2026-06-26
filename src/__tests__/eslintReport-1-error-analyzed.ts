@@ -5,17 +5,17 @@ const reportAnalyzedExpected: AnalyzedESLintReport = {
   warningCount: 0,
   markdown:
     '## 3 Error(s):\n' +
-    '### [`src/form-validation/FormValidatorStrategyFactory.ts` line `18`](https://github.com/ataylorme/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/form-validation/FormValidatorStrategyFactory.ts#L18:L18)\n' +
+    '### [`src/form-validation/FormValidatorStrategyFactory.ts` line `18`](https://github.com/step-security/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/form-validation/FormValidatorStrategyFactory.ts#L18:L18)\n' +
     '- Start Line: `18`\n' +
     '- End Line: `18`\n' +
     '- Message: Expected indentation of 6 spaces but found 4.\n' +
     '  - From: [`indent`]\n' +
-    '### [`src/form-validation/FormValidatorStrategyFactory.ts` line `18`](https://github.com/ataylorme/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/form-validation/FormValidatorStrategyFactory.ts#L18:L18)\n' +
+    '### [`src/form-validation/FormValidatorStrategyFactory.ts` line `18`](https://github.com/step-security/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/form-validation/FormValidatorStrategyFactory.ts#L18:L18)\n' +
     '- Start Line: `18`\n' +
     '- End Line: `18`\n' +
     '- Message: Unexpected newline between object and [ of property access.\n' +
     '  - From: [`no-unexpected-multiline`]\n' +
-    '### [`src/form-validation/FormValidatorStrategyFactory.ts` line `18`](https://github.com/ataylorme/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/form-validation/FormValidatorStrategyFactory.ts#L18:L18)\n' +
+    '### [`src/form-validation/FormValidatorStrategyFactory.ts` line `18`](https://github.com/step-security/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/form-validation/FormValidatorStrategyFactory.ts#L18:L18)\n' +
     '- Start Line: `18`\n' +
     '- End Line: `18`\n' +
     '- Message: Unexpected use of comma operator.\n' +

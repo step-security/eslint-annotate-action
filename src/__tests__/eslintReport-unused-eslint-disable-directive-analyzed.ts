@@ -5,7 +5,7 @@ const reportAnalyzedExpected: AnalyzedESLintReport = {
   warningCount: 0,
   markdown:
     '## 1 Error(s):\n' +
-    '### [`src/index.ts` line `10`](https://github.com/ataylorme/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/index.ts#L10:L10)\n' +
+    '### [`src/index.ts` line `10`](https://github.com/step-security/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/index.ts#L10:L10)\n' +
     '- Start Line: `10`\n' +
     '- End Line: `10`\n' +
     "- Message: Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-unused-vars').\n" +

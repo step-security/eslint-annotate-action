@@ -10,7 +10,7 @@ const MOCK_SHA = '8e80ec28fec6ef9763aacbabb452bcb5d92315ca'
 jest.unstable_mockModule('../constants.js', () => ({
   default: {
     GITHUB_WORKSPACE: '',
-    OWNER: 'ataylorme',
+    OWNER: 'step-security',
     REPO: 'eslint-annotate-github-action',
     SHA: MOCK_SHA,
     failOnWarning: false,

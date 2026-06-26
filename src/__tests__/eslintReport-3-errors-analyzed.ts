@@ -5,17 +5,17 @@ const reportAnalyzedExpected: AnalyzedESLintReport = {
   warningCount: 0,
   markdown:
     '## 3 Error(s):\n' +
-    '### [`src/__tests__/eslintJsonReportToJs.test.ts` line `20`](https://github.com/ataylorme/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/__tests__/eslintJsonReportToJs.test.ts#L20:L20)\n' +
+    '### [`src/__tests__/eslintJsonReportToJs.test.ts` line `20`](https://github.com/step-security/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/__tests__/eslintJsonReportToJs.test.ts#L20:L20)\n' +
     '- Start Line: `20`\n' +
     '- End Line: `20`\n' +
     '- Message: Delete `;`\n' +
     '  - From: [`prettier/prettier`]\n' +
-    '### [`src/__tests__/eslintJsonReportToJs.test.ts` line `21`](https://github.com/ataylorme/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/__tests__/eslintJsonReportToJs.test.ts#L21:L21)\n' +
+    '### [`src/__tests__/eslintJsonReportToJs.test.ts` line `21`](https://github.com/step-security/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/__tests__/eslintJsonReportToJs.test.ts#L21:L21)\n' +
     '- Start Line: `21`\n' +
     '- End Line: `21`\n' +
     '- Message: Delete `;`\n' +
     '  - From: [`prettier/prettier`]\n' +
-    '### [`src/__tests__/eslintJsonReportToJs.test.ts` line `25`](https://github.com/ataylorme/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/__tests__/eslintJsonReportToJs.test.ts#L25:L25)\n' +
+    '### [`src/__tests__/eslintJsonReportToJs.test.ts` line `25`](https://github.com/step-security/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/__tests__/eslintJsonReportToJs.test.ts#L25:L25)\n' +
     '- Start Line: `25`\n' +
     '- End Line: `25`\n' +
     '- Message: Insert `⏎`\n' +

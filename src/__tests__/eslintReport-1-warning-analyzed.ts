@@ -5,7 +5,7 @@ const reportAnalyzedExpected: AnalyzedESLintReport = {
   warningCount: 1,
   markdown:
     '## 1 Warning(s):\n' +
-    '### [`src/app.ts` line `5`](https://github.com/ataylorme/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/app.ts#L5:L5)\n' +
+    '### [`src/app.ts` line `5`](https://github.com/step-security/eslint-annotate-github-action/blob/8e80ec28fec6ef9763aacbabb452bcb5d92315ca/src/app.ts#L5:L5)\n' +
     '- Start Line: `5`\n' +
     '- End Line: `5`\n' +
     '- Message: Unexpected console statement.\n' +

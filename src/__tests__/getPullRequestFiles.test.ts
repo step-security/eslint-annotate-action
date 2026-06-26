@@ -6,7 +6,7 @@ const mockListFiles = jest.fn()
 jest.unstable_mockModule('../constants.js', () => ({
   default: {
     GITHUB_WORKSPACE: '',
-    OWNER: 'ataylorme',
+    OWNER: 'step-security',
     REPO: 'eslint-annotate-github-action',
     pullRequest: { number: 3, head: { sha: '8e80ec28fec6ef9763aacbabb452bcb5d92315ca' } },
     onlyChangedFiles: true,
@@ -32,11 +32,11 @@ describe('getPullRequestFiles', () => {
     const mockFiles = [{ filename: 'src/app.ts' }, { filename: 'src/utils.ts' }, { filename: 'README.md' }]
     mockPaginate.mockResolvedValue(mockFiles)
 
-    const result = await getPullRequestFiles('ataylorme', 'eslint-annotate-github-action', 3)
+    const result = await getPullRequestFiles('step-security', 'eslint-annotate-github-action', 3)
 
     expect(result).toEqual(['src/app.ts', 'src/utils.ts', 'README.md'])
     expect(mockPaginate).toHaveBeenCalledWith(mockListFiles, {
-      owner: 'ataylorme',
+      owner: 'step-security',
       repo: 'eslint-annotate-github-action',
       pull_number: 3,
     })
@@ -45,13 +45,15 @@ describe('getPullRequestFiles', () => {
   it('returns an empty array when the PR has no changed files', async () => {
     mockPaginate.mockResolvedValue([])
 
-    const result = await getPullRequestFiles('ataylorme', 'eslint-annotate-github-action', 99)
+    const result = await getPullRequestFiles('step-security', 'eslint-annotate-github-action', 99)
     expect(result).toEqual([])
   })
 
   it('propagates API errors', async () => {
     mockPaginate.mockRejectedValue(new Error('Not Found'))
 
-    await expect(getPullRequestFiles('ataylorme', 'eslint-annotate-github-action', 999)).rejects.toThrow('Not Found')
+    await expect(getPullRequestFiles('step-security', 'eslint-annotate-github-action', 999)).rejects.toThrow(
+      'Not Found',
+    )
   })
 })

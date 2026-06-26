@@ -7,7 +7,7 @@ const mockGetPullRequestFiles = jest.fn()
 jest.unstable_mockModule('../constants.js', () => ({
   default: {
     GITHUB_WORKSPACE: '',
-    OWNER: 'ataylorme',
+    OWNER: 'step-security',
     REPO: 'eslint-annotate-github-action',
     pullRequest: { number: 1, head: { sha: MOCK_SHA } },
     onlyChangedFiles: true,
