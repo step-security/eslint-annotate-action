@@ -1,0 +1,67 @@
+{
+  "name": "eslint-annotate-action",
+  "version": "4.0.0",
+  "description": "A GitHub action that takes ESLint results from a JSON file and adds them as annotated pull request comments",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run format:write && npm run package",
+    "package": "rimraf ./dist && rollup --config rollup.config.mjs",
+    "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "lint:report": "eslint --output-file eslint_report.json --format json src",
+    "format:write": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/step-security/eslint-annotate-action.git"
+  },
+  "keywords": [],
+  "author": "step-security",
+  "bugs": {
+    "url": "https://github.com/step-security/eslint-annotate-action/issues"
+  },
+  "homepage": "https://github.com/step-security/eslint-annotate-action#readme",
+  "dependencies": {
+    "@actions/core": "^3.0.0",
+    "@actions/github": "^9.0.0",
+    "@actions/glob": "^0.6.1",
+    "axios": "^1.18.0"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.0.0",
+    "@eslint/eslintrc": "^3.0.0",
+    "@eslint/js": "^9.0.0",
+    "@octokit/plugin-rest-endpoint-methods": "^17.0.0",
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.0.0",
+    "@types/eslint": "^9.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^24.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-jest": "^29.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "globals": "^15.0.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^6.0.0",
+    "rollup": "^4.0.0",
+    "ts-jest": "^29.4.0",
+    "ts-jest-resolver": "^2.0.1",
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,45 @@
+name: "ESLint Annotate from Report JSON"
+description: "Annotates pull request diffs with warnings and errors from an ESLint report JSON file."
+inputs:
+  github-token:
+    description: "The 'GITHUB_TOKEN' secret"
+    default: ${{ github.token }}
+    required: true
+  report-json:
+    description: "Path or glob pattern to locate the ESLint report JSON file"
+    default: "eslint_report.json"
+    required: false
+  only-pr-files:
+    description: "Only annotate files changed when run on the 'pull_request' event"
+    default: 'true'
+    required: false
+  fail-on-warning:
+    description: "Fail the GitHub Action when ESLint warnings are detected. Set to 'true' to enable."
+    default: 'false'
+    required: false
+  fail-on-error:
+    description: "Whether to fail the Github action when ESLint errors are detected. If set to false, the check that is created will still fail on ESLint errors."
+    default: 'true'
+    required: false
+  neutral-on-warning:
+    description: "Set the check conclusion to 'neutral' when ESLint warnings are detected but no errors. Overridden by fail-on-warning."
+    default: 'false'
+    required: false
+  check-name:
+    description: "The name of the GitHub status check created."
+    default: 'ESLint Report Analysis'
+    required: false
+  markdown-report-on-step-summary:
+    description: "Whether to show a markdown report in the step summary."
+    default: 'false'
+    required: false
+  post-comment:
+    description: "Whether to post the markdown report as a pull request comment. Replaces any previous comment from this action."
+    default: 'false'
+    required: false
+runs:
+  using: "node24"
+  main: "dist/index.js"
+branding:
+  icon: "check-circle"
+  color: "yellow"
